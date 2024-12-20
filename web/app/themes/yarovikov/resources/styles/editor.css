@@ -1,0 +1,35 @@
+@import "blocks/contact-form.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.editor-styles-wrapper {
+  .wp-block-post-title {
+    @apply text-2xl font-medium px-4 mb-10;
+  }
+
+  .block-editor-block-list__layout {
+    @apply px-4;
+  }
+
+  div {
+    @apply antialiased;
+  }
+}
+
+.gutengood-block {
+  @apply pointer-events-none;
+
+  a {
+    @apply no-underline;
+  }
+
+  margin-top: var(--block-margin-top-mobile);
+  margin-bottom: var(--block-margin-bottom-mobile);
+
+  @media screen(lg) {
+    margin-top: var(--block-margin-top-desktop);
+    margin-bottom: var(--block-margin-bottom-desktop);
+  }
+}

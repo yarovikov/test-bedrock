@@ -1,0 +1,23 @@
+.contact-form-block {
+  form {
+    @apply flex flex-col gap-3;
+
+    fieldset {
+      label {
+        @apply text-sm;
+      }
+
+      @apply flex flex-col gap-1;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      @apply border border-gray-200 rounded-none p-2;
+    }
+
+    button[type='submit'] {
+      @apply bg-sky-700 text-white p-2;
+    }
+  }
+}
